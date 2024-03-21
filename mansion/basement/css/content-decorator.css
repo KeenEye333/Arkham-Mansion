@@ -1,0 +1,76 @@
+body.parchment {
+  background-image: url('locker/very-old-parchment.webp');
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+  height: 1500px;
+  background-position: center center;
+  font-size: 25px; /* Set your desired base font size */
+  font-family: 'Georgia', serif;
+  color: #633111;
+}
+
+body.console {
+  background-image: url('locker/console.webp');
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+  background-position: center center;
+  font-size: 22px; /* Set your desired base font size */
+  color: #006400;
+  font-family: Courier, monospace; /* Use Courier font */
+}
+
+
+p.parchment {
+ padding-left: 32px;
+ padding-right: 32px;
+}
+
+
+h3.parchment:hover {
+  font-size: 35px; /* Set your desired base font size */
+  transition: font-size 0.6s ease; /* Added transition for the padding property */
+  animation: colorParchment 6s infinite alternate;
+}
+
+
+p.parchment:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: padding 0.3s ease; /* Added transition for the padding property */
+  animation: colorParchment 6s infinite alternate;
+}
+
+
+@keyframes colorParchment {
+      0% {
+        color: #491fb5;
+      }
+      100% {
+        color: #a8100d;
+      }
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f1f1f1;
+}
+
+/* Set the color of the scrollbar thumb */
+html:hover {
+  scrollbar-color: #3498db #e5e5e5;
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 13px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* color of the scrollbar thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the scrollbar track */
+}

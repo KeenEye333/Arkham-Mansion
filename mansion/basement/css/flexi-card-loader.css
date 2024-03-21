@@ -1,0 +1,110 @@
+body {
+  background-image: url('locker/paper-parchment-old-retro.webp');
+  height: 800px;
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+.grid { 
+  display: grid;
+  border-radius: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-gap: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* background-repeat: no-repeat; */
+  align-items: center;
+  }
+  
+  
+.grid > article {
+  background-image: url('locker/white-crumpled-paper.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  transition: transform 0.3s ease; /* Added transition for the transform property */
+}
+
+.grid > article:hover{
+	box-shadow: 8px 4px 6px 3px  rgba(0,0,0,0.3);
+	transform: scale(1.09); /* Scale up on hover */
+}
+
+.grid > article img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Added transition for the transform property */
+}
+
+.grid > article img:hover{
+	border: 2px solid #ccc;
+	filter: brightness(135%);
+	box-shadow: 8px 4px 8px 10px  rgba(0,0,0,0.4);
+	transform: scale(1.08); /* Scale up on hover */
+}
+
+.text {
+  padding: 0 20px 20px;
+  align-items: left;
+}
+
+.text > button {
+  background: gray;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animation part takes properties of button:hover */
+}
+
+.text > button:hover {
+  background-color: #131424;
+  box-shadow: 2px 4px 4px 2px  rgba(0,0,0,0.3);
+  color: #ffffff;  /* Change text color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+audio{
+	transition: background-color 0.3s ease, color 0.3s ease; /* Animation part takes properties of button:hover */
+}
+
+audio:hover {
+	transform: scale(1.1); /* Scale up on hover */
+}
+
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f1f1f1;
+}
+
+/* Set the color of the scrollbar thumb */
+html:hover {
+  scrollbar-color: #3498db #e5e5e5;
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 13px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* color of the scrollbar thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the scrollbar track */
+}
